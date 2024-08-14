@@ -5,8 +5,7 @@ This Python script is designed to solve a 3-digit code based on a series of gues
 ![Image](1723659622510.jpeg)
 
 
-How It Works
-Input
+## How It Works
 The script starts with an array of guesses, each of which includes:
 
 guess: A list of three digits representing a potential code.
@@ -35,18 +34,18 @@ Requirements
 Python 3.x
 No additional libraries are required beyond Python's standard library.
 
-Usage
+## Usage
 Clone or Download this repository.
 Run the script:
-bash
-Copy code
+```bash
+
 python3 lock_guess.py
-View the output: The script will print the valid combinations that could be the correct code.
-Example
+```
+
+## View the output: The script will print the valid combinations that could be the correct code.
 Given the following guesses:
 
-python
-Copy code
+```python
 guesses = [
     {"guess": [6, 8, 2], "correct": 1, "wrong_position": 0},
     {"guess": [6, 1, 4], "correct": 0, "wrong_position": 1},
@@ -54,12 +53,13 @@ guesses = [
     {"guess": [7, 3, 8], "correct": 0, "wrong_position": 0, "none_of_these": True},
     {"guess": [7, 8, 0], "correct": 0, "wrong_position": 1},
 ]
+```
 The script will output:
 
-bash
-Copy code
+```bash
 Valid combinations: [(0, 4, 2)]
-Indicating that 042 is the correct code.
+```
+
 
 License
 This project is licensed under the MIT License.
